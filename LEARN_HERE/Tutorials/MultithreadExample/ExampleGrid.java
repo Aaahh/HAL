@@ -92,7 +92,7 @@ public class ExampleGrid extends AgentGrid2D<ExampleCell> {
                         model.Step(dieProb, divProb);
 
                         //record output
-                        if (i + 1 % 100 == 0) {
+                        if ((i + 1) % 100 == 0) {
                             output[i / 100] = model.GetPop();
                             output[i / 100 + 1] = model.oxygen.GetAvg();
                         }
